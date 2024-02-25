@@ -76,5 +76,12 @@ namespace Ejemplo_1
             tbxTelefono.Text = per.Telefono;
             tbxCorreo.Text = per.Correo;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmRecibe formulario = new FrmRecibe();
+            formulario.PersonaRecibe = Personas;
+            formulario.Show();
+        }
     }
 }

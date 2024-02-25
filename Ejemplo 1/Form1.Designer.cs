@@ -39,6 +39,7 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.gridContacto = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridContacto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,7 +86,7 @@
             // tbxNombre
             // 
             this.tbxNombre.Location = new System.Drawing.Point(101, 37);
-            this.tbxNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxNombre.Margin = new System.Windows.Forms.Padding(2);
             this.tbxNombre.Name = "tbxNombre";
             this.tbxNombre.Size = new System.Drawing.Size(76, 20);
             this.tbxNombre.TabIndex = 4;
@@ -93,7 +94,7 @@
             // tbxApellido
             // 
             this.tbxApellido.Location = new System.Drawing.Point(101, 70);
-            this.tbxApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxApellido.Margin = new System.Windows.Forms.Padding(2);
             this.tbxApellido.Name = "tbxApellido";
             this.tbxApellido.Size = new System.Drawing.Size(76, 20);
             this.tbxApellido.TabIndex = 5;
@@ -101,7 +102,7 @@
             // tbxTelefono
             // 
             this.tbxTelefono.Location = new System.Drawing.Point(101, 103);
-            this.tbxTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.tbxTelefono.Name = "tbxTelefono";
             this.tbxTelefono.Size = new System.Drawing.Size(76, 20);
             this.tbxTelefono.TabIndex = 6;
@@ -109,15 +110,15 @@
             // tbxCorreo
             // 
             this.tbxCorreo.Location = new System.Drawing.Point(101, 136);
-            this.tbxCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.tbxCorreo.Name = "tbxCorreo";
             this.tbxCorreo.Size = new System.Drawing.Size(76, 20);
             this.tbxCorreo.TabIndex = 7;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(244, 54);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Location = new System.Drawing.Point(246, 42);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(56, 19);
             this.btnGuardar.TabIndex = 8;
@@ -127,8 +128,8 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(245, 119);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Location = new System.Drawing.Point(246, 84);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(56, 19);
             this.btnEliminar.TabIndex = 9;
@@ -141,7 +142,7 @@
             this.gridContacto.AllowUserToOrderColumns = true;
             this.gridContacto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridContacto.Location = new System.Drawing.Point(10, 176);
-            this.gridContacto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridContacto.Margin = new System.Windows.Forms.Padding(2);
             this.gridContacto.Name = "gridContacto";
             this.gridContacto.RowHeadersWidth = 51;
             this.gridContacto.RowTemplate.Height = 24;
@@ -150,11 +151,23 @@
             this.gridContacto.TabIndex = 10;
             this.gridContacto.DoubleClick += new System.EventHandler(this.gridContacto_DoubleClick);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(246, 126);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 19);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Enviar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ContactosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 435);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.gridContacto);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnGuardar);
@@ -166,7 +179,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ContactosForm";
             this.Text = "Contactos";
             ((System.ComponentModel.ISupportInitialize)(this.gridContacto)).EndInit();
@@ -188,6 +201,7 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView gridContacto;
+        private System.Windows.Forms.Button button1;
     }
 }
 
