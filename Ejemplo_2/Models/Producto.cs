@@ -7,5 +7,6 @@
         public string Marca { get; set; }
         public float Precio { get; set; }
         public int Stock { get; set; }
+        public string ImagenPath { get; set; }
     }
 }
